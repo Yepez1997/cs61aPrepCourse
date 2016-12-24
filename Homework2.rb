@@ -71,11 +71,33 @@ puts letters  ##prints variable
 ##You want to tell the .center method how wide you want the string to be centered
 ##ExampleOf.center
 line_width  = 50 ##Exercise prints all the strings centered
-## line_width is a variable that stores the value 50
-## the value is used after .center to determaine the width 
+## line_width is a variable that STORES the value 50
+## the value is used after .center to determaine the width
 puts ('Old Mother Hubbard'.center(line_width))
 puts ('Sat in her cupboard'.center(line_width))
 puts ('Eating her curds and her whey'.center(line_width))
 puts ('Whan along came a spider'.center(line_width))
 puts ('Who sat down beside her'.center(line_width))
 puts ('And scared her poor shoe dog away'.center(line_width))
+##integrationOF.center.ljust.rjust
+##RECAP
+  ##.center puts to the center
+  ##.ljust  puts to the left
+  ##.rjust  puts to the right
+line_width = 40 ##line_width stores a value of 40
+str = '-->text<--'
+puts(str.ljust(line_width)) ##moves to the left
+puts(str.center(line_width))
+puts(str.rjust(line_width))
+puts(str.ljust(line_width/2)) + str.rjust(line_width/2)
+
+##aFewThingsToTry
+##AngryBoss
+angryResponse = "I want a raise"
+puts "What do you want?"
+generalResponse = gets.chomp
+while generalResponse != angryResponse do
+  puts "So you want, " + response
+  if generalResponse == angryResponse do
+    puts "WHADDAYA MEAN 'I WANT A RAISE'?!? YOU\'RE FIRED"
+  end
