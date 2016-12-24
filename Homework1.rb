@@ -1,7 +1,14 @@
-##Chapter 1 - 5 Finished on Dec. 21 
 ##Ruby Program Introduction
 
+##Chapter 1 - 5 Finished on Dec. 21
 ##Chapter 1: Getting Started
+##Chapter 2: Numbers
+##Chapter 3: Letters
+##Chapter 4: Variables and Assignement
+##Chapter 5: Mixing it up
+
+##Chapter 1: Getting Started
+##Basic info instaling text interpreters
 
 ##Chapter 2: Numbers
 puts 1+2 ## Puts is a simple way to put the text onto the command line
@@ -171,7 +178,6 @@ puts "Nice to meet you, " + nameAsk + " " +  nameMiddle + ", What is your last n
 nameLast = gets.chomp
 puts "Do you want to grab lunch, " +nameAsk + "" +  nameMiddle + " " + nameLast + "?"
 
-##BiggerBetterFavNumber
 ##BiggerBetterFavNumber
 puts "Hello, what is your name ?" ##Asks for favorite number
 name = gets.chomp ##Chomps the Variable
