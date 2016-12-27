@@ -186,7 +186,7 @@ puts i_like_music && i_eat_grass  ##false
 puts i_am_purple && i_like_music  ##false
 puts i_am_purple && i_eat_grass   ##false
 puts
-## OR
+## OR: In english one or the other has to be true, not both. At least one or both has to be true
 puts i_am_yepez || i_like_music   ##true
 puts i_like_music || i_eat_grass  ##true
 puts i_am_purple || i_like_music  ##true
@@ -195,3 +195,5 @@ puts
 ## NOT
 puts !i_am_purple                 ##true
 puts !i_am_yepez                  ##false
+
+##CBookExample
