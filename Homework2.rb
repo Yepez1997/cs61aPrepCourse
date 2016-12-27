@@ -99,7 +99,7 @@ puts "WHADDAYA MEAN 'I WANT A RAISE'?!? YOU\'RE FIRED"
 
 ##TableOfContents
 ##(Could be written for in many ways)
-line_center = 15 ##line_width stores a value of 40
+line_center = 15 
 line_right= 20
 line_left = 10
 line_table_contents = 60
