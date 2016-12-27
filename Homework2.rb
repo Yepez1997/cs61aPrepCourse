@@ -87,17 +87,35 @@ puts ('And scared her poor shoe dog away'.center(line_width))
 line_width = 40 ##line_width stores a value of 40
 str = '-->text<--'
 puts(str.ljust(line_width)) ##moves to the left
-puts(str.center(line_width))
-puts(str.rjust(line_width))
+puts(str.center(line_width)) ##moves to the center
+puts(str.rjust(line_width))  ##moves to the right
 puts(str.ljust(line_width/2)) + str.rjust(line_width/2)
 
 ##aFewThingsToTry
 ##AngryBoss
-angryResponse = "I want a raise"
 puts "What do you want?"
 generalResponse = gets.chomp
-while generalResponse != angryResponse do
-  puts "So you want, " + response
-  if generalResponse == angryResponse do
-    puts "WHADDAYA MEAN 'I WANT A RAISE'?!? YOU\'RE FIRED"
-  end
+puts "WHADDAYA MEAN 'I WANT A RAISE'?!? YOU\'RE FIRED"
+
+##TableOfContents
+##(Could be written for in many ways)
+line_center = 15 ##line_width stores a value of 40
+line_right= 20
+line_left = 10
+line_table_contents = 60
+table_of_contents = 'Table of Contents'
+chapter_1 = 'Chapter 1: '
+title_1= 'Introduction'
+page_1 = 'Page 1'
+chapter_2 = 'Chapter 2: '
+title_2 = 'Numbers'
+page_2 = 'Page 9'
+chapter_3 = 'Chapter 3: '
+title_3 = 'Leters'
+page_3 = 'Page 13'
+puts (table_of_contents.center(line_table_contents))
+puts ()
+puts ((chapter_1.ljust(line_left)) + (title_1.center(line_center)) + (page_1.rjust(line_right)))
+puts ((chapter_2.ljust(line_left)) + (title_2.center(line_center)) + (page_2.rjust(line_right)))
+puts ((chapter_3.ljust(line_left)) + (title_3.center(line_center)) + (page_3.rjust(line_right)))
+puts ()
