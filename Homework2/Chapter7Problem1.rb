@@ -70,4 +70,4 @@ if response == answer || response == answer.capitalize || response == answer.cap
 else
   puts "Sorry that is the only song avaialble at the moment"
 end
-##Code ends :) 
+##Code ends :)
