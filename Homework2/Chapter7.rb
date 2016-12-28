@@ -197,3 +197,17 @@ puts !i_am_purple                 ##true
 puts !i_am_yepez                  ##false
 
 ##CBookExample
+while true
+  puts "What would you like C to do ?"
+  request = gets.chomp
+  puts "You say, 'C please " + request + "'"
+  puts 'C\'s response:'
+  puts '"Papa ' + request + ', too."'
+  puts '"Mama ' + request + ', too."'
+  puts '"Ruby ' + request + ', too."'
+  puts '"Nono ' + request + ', too."'
+  puts '"Emma ' + request + ', too."'
+  if request == 'stop' ##keeps looping until request = 'stop',then it terminates
+    break
+  end
+end
