@@ -31,16 +31,17 @@
 
 ##MainCode
 
-puts ("Hello")
-response = gets.chomp
-stopTalkingGrandma = "BYE"
+puts ("Hello") ##Grandma Starts By Saying Hello
+response = gets.chomp ##Response to Grandma
+stopTalkingGrandma = "bye bye bye" ##Variable that declares while loop to be True
 
-while response != stopTalkingGrandma
+while response != stopTalkingGrandma.upcase ##While response != "bye bye bye" upcase the code runs
   puts ("HUH?! SPEAK UP, SONNY !")
   response = gets.chomp
-  if response == response.upcase
+  if response == response.upcase ##Branch to print string and rand number between 1930-1950
     randomYear = rand(1929..1950)
     puts ("NO NOT SINCE " + randomYear.to_s)
-
+  elsif response == stopTalkingGrandma.upcase ##Program stops if response to variable is all upcase
+      break ##Program ends 
   end
 end
