@@ -11,7 +11,7 @@
 
 ##LeapYears
 
-##PseudoCode
+##PseudoCode (Does not follow the actual program, needs tweeking)
 ## Write a program:
 ##1. Asks the user a start year and end year
 ##2. Finds the leap years in between and prints them
@@ -43,10 +43,8 @@ endOfThousands = 0
 while endYear.to_i > startYear.to_i && startofThousands > endOfThousands
   endYear -=1
   startofThousands -= 1
-  if startofThousands % 100 == 0
-    
-  elsif
-     endYear % 4 == 0 && endYear != startofThousands
+  if endYear % 4 == 0 && endYear != startofThousands
     puts endYear
   end
 end
+puts ("Numbers divisible by 100 are not LeapYears")
