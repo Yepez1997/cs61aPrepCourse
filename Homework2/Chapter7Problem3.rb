@@ -31,20 +31,22 @@
 puts ("Welcome to the LeapYears Tracker")
 puts ("Please enter a number between 1 and 2017")
 
-while true
 
 puts ("What year would you want to start of with ? ")
-startYear = gets.chomp
+startYear = gets.chomp.to_i
 puts ("What year would you like to end in ? ")
-endYear = gets.chomp
+endYear = gets.chomp.to_i
+puts "The LeapYears numbers are: "
 
-  if startYear == startYear.to_i && endYear == endYear.to_i
-    puts ("You inputed " + startYear.to_s + " " + endYear.to_s + "?")
-    response = gets.chomp
-    responseCheck = "yes"
-      if response == responseCheck
-        puts ("Okay great !")
-        break
-      end
+startofThousands = 2017
+endOfThousands = 0
+while endYear.to_i > startYear.to_i && startofThousands > endOfThousands
+  endYear -=1
+  startofThousands -= 1
+  if startofThousands % 100 == 0
+    
+  elsif
+     endYear % 4 == 0 && endYear != startofThousands
+    puts endYear
   end
 end
