@@ -42,15 +42,28 @@ puts favoriteFruits
 ## Each allows us to point to each object an array points to
 ## BookExample
 
+##ARRAYMETHOD/ITERATOR/.each
 languages = ['Norweigen','English','Spanish','Ruby']
-languages.each do |lang|
+languages.each do |lang| ##Vertical bars let each know which variable to feed
   puts 'I love ' + lang + '!'
   puts 'Don\'t you ?'
 end
 ##This almost works like a for loop and the sentence iterates over each object with the method each
 ## This is what the code does, according to the author !! VVVVVVVVVV
-##"For each object in languages, point the variable lang to the object, and then do everything I tell you to, until you come to the end."
+## "For each object in languages, point the variable lang to the object, and then do everything I tell you to, until you come to the end."
 ## Use do and end to specify a block
 ## lang is the variable that points to the objects in langauges
 ## Avoid messing with slot numbers
-## While and end are not methods, each is a method 
+## While and end are not methods, each is a method
+## Each methods goes in loops an acts as iterators : ARRAY METHOD !
+## While loops do not have blocks. Iterators do ! do and end is a block
+
+## Iterators do not have to be arrays
+##ExampleOne
+5.times do ## Has a block do and end ## Integer method !
+  puts 'Hip-Hip-Hooray!' ##Prints the strings 5 times
+end
+##ExampleTwo
+2.times do ## Integer method !
+  puts  " ... say that again ... " ##Prints the strings 2 times
+end
