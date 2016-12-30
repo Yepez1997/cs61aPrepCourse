@@ -38,5 +38,19 @@ favoriteFruits [5] = 'Avocado'
 puts favoriteFruits
 ##Prints the entire Array ! Notice Index 4 is missing, its not declared so its nil
 
-##MethodEach
-## Each allows us to point to each object an array points to 
+## MethodEach
+## Each allows us to point to each object an array points to
+## BookExample
+
+languages = ['Norweigen','English','Spanish','Ruby']
+languages.each do |lang|
+  puts 'I love ' + lang + '!'
+  puts 'Don\'t you ?'
+end
+##This almost works like a for loop and the sentence iterates over each object with the method each
+## This is what the code does, according to the author !! VVVVVVVVVV
+##"For each object in languages, point the variable lang to the object, and then do everything I tell you to, until you come to the end."
+## Use do and end to specify a block
+## lang is the variable that points to the objects in langauges
+## Avoid messing with slot numbers
+## While and end are not methods, each is a method 
